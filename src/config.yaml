@@ -1,0 +1,73 @@
+site:
+  name: 밀리트래커
+  site: 'https://militracker-landing.vercel.app/'
+  base: '/'
+  trailingSlash: false
+
+  # 새 도메인 등록 후 Google Search Console에서 발급받은 ID로 교체하세요
+  googleSiteVerificationId: ''
+
+# Default SEO metadata
+metadata:
+  title:
+    default: 밀리트래커 - 군적금 수령액 자동 계산 앱
+    template: '%s — 밀리트래커'
+  description: "복무 기간 동안 받게 될 군적금 원리금과 매칭지원금을 자동으로 계산해주는 앱. 여러 은행에 분산된 적금을 한 화면에서 관리하세요."
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: 밀리트래커
+    images:
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
+    type: website
+  twitter:
+    handle: ''
+    site: ''
+    cardType: summary_large_image
+
+i18n:
+  language: ko
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: false
+    postsPerPage: 6
+
+    post:
+      isEnabled: true
+      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      robots:
+        index: true
+
+    list:
+      isEnabled: true
+      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      robots:
+        index: true
+
+    category:
+      isEnabled: true
+      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      robots:
+        index: true
+
+    tag:
+      isEnabled: true
+      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      robots:
+        index: false
+
+    isRelatedPostsEnabled: true
+    relatedPostsCount: 4
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: null # or "G-XXXXXXXXXX"
+
+ui:
+  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
