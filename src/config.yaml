@@ -5,7 +5,7 @@ site:
   trailingSlash: false
 
   # 새 도메인 등록 후 Google Search Console에서 발급받은 ID로 교체하세요
-  googleSiteVerificationId: ''
+  googleSiteVerificationId: 'KmwZH2K8WJvF0EZb61TBXcTZzCY5TerUGRjeTLOvA8I'
 
 # Default SEO metadata
 metadata:
