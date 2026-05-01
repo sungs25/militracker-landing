@@ -1,6 +1,6 @@
 site:
   name: 밀리트래커
-  site: 'https://militracker-landing.vercel.app/''
+  site: 'https://militracker-landing.vercel.app/'
   base: '/'
   trailingSlash: false
 
